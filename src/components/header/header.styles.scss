@@ -1,7 +1,6 @@
 .header {
   height: 4.5rem;
   display: flex;
-  // align-items: center;
   justify-content: space-between;
 
   .logo-container {
@@ -21,10 +20,11 @@
       padding: .8rem 1rem;
       position: relative;
       font-size: 1.3rem;
+      cursor: pointer;
 
       &::before {
         content: '';
-        height: .3rem;
+        height: .1rem;
         position: absolute;
         display: block;
         bottom: -.1rem;
