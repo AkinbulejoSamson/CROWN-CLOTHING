@@ -1,5 +1,5 @@
 .custom-button {
-  min-width: 10rem;
+  min-width: 8rem;
   width: auto;
   height: 50px;
   letter-spacing: .5px;
@@ -13,6 +13,8 @@
   color: white;
   border: none;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
 
   &:hover {
     background-color: white;
@@ -28,6 +30,17 @@
     &:hover {
       background-color: #357ae8;
       border: none;
+    }
+  }
+
+  &.inverted {
+    background-color: white;
+    color: black;
+
+    &:hover {
+      background-color: black;
+      color: white;
+      border:none;
     }
   }
 }
