@@ -1,0 +1,41 @@
+.cart-icon {
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    height: .1rem;
+    position: absolute;
+    display: block;
+    bottom: -.1rem;
+    left: 0.5rem;
+    right: 0.5rem;
+    background: black;
+    transform: scale(0,1);
+    transition: transform ease-in-out 250ms;
+  }
+
+  &:hover::before {
+    transform: scale(1,1);
+  }
+
+  .shopping-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-bottom: .7rem;
+  }
+
+  .item-count {
+    position: absolute;
+    font-size: .9rem;
+    font-weight: bold;
+    bottom: 1.1rem;
+
+    
+  }
+}
