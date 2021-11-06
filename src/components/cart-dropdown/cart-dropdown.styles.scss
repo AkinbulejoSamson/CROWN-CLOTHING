@@ -16,6 +16,19 @@
     display: flex;
     flex-direction: column;
     overflow: auto ;
+
+    &::-webkit-scrollbar {
+      width: .7em;
+    }
+     
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.0);
+    }
+     
+    &::-webkit-scrollbar-thumb {
+      background-color: darkgrey;
+    }
+    
   }
 
   button {
