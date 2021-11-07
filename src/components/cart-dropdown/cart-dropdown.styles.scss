@@ -18,6 +18,11 @@
     overflow: auto ;
     font-family: 'Open Sans Condensed';
 
+    .empty-message {
+      font-size: 1.5rem;
+      margin: 6rem auto;
+    }
+
     &::-webkit-scrollbar {
       width: .7em;
     }
