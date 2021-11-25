@@ -7,8 +7,13 @@ export const CollectionPreviewContainer = styled.div`
 `
 
 export const TitleContainer = styled.h1`
+  cursor: pointer;
   font-size: 30px;
   margin-bottom: 1.5rem;
+
+  &:hover {
+    color: grey;
+  }
 `
 
 export const PreviewContainer = styled.div`

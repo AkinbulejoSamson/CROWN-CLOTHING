@@ -40,7 +40,7 @@ export const BackgroundImageContainer = styled.div`
   width: 100%;
   height: 100%;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: space no-repeat;
   background-size: cover;
   background-image: ${({ imageUrl }) => `url(${imageUrl})`};
 `;
