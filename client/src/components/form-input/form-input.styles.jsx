@@ -10,31 +10,36 @@ const shrinkLabel = css`
 `;
 
 export const GroupContainer = styled.div`
-  position: relative;
-  margin: 3rem 0;
-  input[type='password'] {
-    letter-spacing: .3em;
-  }
+	position: relative;
+	margin: 3rem 0;
+	input[type="password"] {
+		letter-spacing: 0.3em;
+	}
+
+	@media screen and (max-width: 800px) {
+    margin: 1rem 0;
+	}
 `;
 
 export const FormInputContainer = styled.input`
-  border: none;
-  border-bottom: 1px solid ${subColor};
-  border-radius: 0;
-  width: 100%;
-  background: none;
-  background-color: white;
-  font-size: 1.2rem;
-  padding: 10px 10px 10px 5px;
-  display: block;
-  margin: 1.5rem 0;
-  color: ${subColor};
-  &:focus {
-    outline: none;
-  }
-  &:focus ~ label {
-    ${shrinkLabel}
-  }
+	border: none;
+	border-bottom: 1px solid ${subColor};
+	border-radius: 0;
+	width: 100%;
+	background: none;
+	background-color: white;
+	font-size: 1.2rem;
+	padding: 10px 10px 10px 5px;
+	display: block;
+	margin: 1.5rem 0;
+	color: ${subColor};
+	&:focus {
+		outline: none;
+	}
+	&:focus ~ label {
+		${shrinkLabel}
+	}
+
 `;
 
 export const FormInputLabel = styled.label`

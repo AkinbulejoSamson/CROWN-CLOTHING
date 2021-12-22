@@ -25,8 +25,12 @@ export const ItemImage = styled.img`
 `
 
 export const ItemName = styled.span`
-  ${Width}
-`
+	${Width}
+
+	// @media screen and (max-width: 800px) {
+	// 	font-size: 2rem;
+	// }
+`;
 
 export const ItemQuantity = styled.span`
   ${Width};
